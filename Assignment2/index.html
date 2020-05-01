@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>The Bite Size Bakery</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/component.css" rel="stylesheet">
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="plugindemo.html">About my Plugin</a>
+			<a href="menu.html">Our Products</a>
+			<a href="gallery.html">Gallery</a>			
+			<a href="contact.html">Contact Us</a>
+		</nav>
+
+
+<div class = "ui container">
+
+<header class = "ui segment">
+	<img src = "images/logo.jpg" alt="The Bite Size Bakery" class="ui middle aligned fluid image">
+</header>
+
+<main class = "ui padded stackable grid">
+
+<nav class = "ui two item stackable menu">
+	<a class = "item" href = "index.html">Home</a>
+	<button class = "item" id="showLeftPush">Menu</button>
+</nav>
+
+	<div class = "sixteen wide column" id = "intro">
+	Hello and welcome to the <strong>Bite Size Bakery's</strong> Website! Feel free to browse through all of our custom cakes and bakes in our <em>'Menu'</em> and <em>'Gallery'</em> page.
+	<br><br>
+	If you like what you see, check out our Facebook and Instagram or head over to our <em>'Contact'</em> page to place an order instantly!
+	</div>
+
+	<div class = "sixteen wide column">
+	<h2>About The Bite Size Bakery</h2>
+	</div>
+
+	<div class = "seven wide stackable column">
+	<img src = "images/header.jpg" alt = "Salted Caramel Cupcakes" class = "ui large fluid middle aligned image" id = "cupcakesimg">
+	</div>
+
+	<div class = "nine wide stackable column" id = "about1">
+	The Bite Size Bakery is a small, local bakery run single-handedly by Stephanie Sherrard since 2017. Now a mother to a small baby, Stephanie balances taking care of her baby and her business from her very own home kitchen!
+	<br><br><br>
+	The Bite Size Bakery accommodates all its customers with its novelty celebration cakes – Stephanie is open to all flavours, designs, and themes. Birthday cakes are the most popular order, though Stephanie has also baked for weddings, company-launch parties, and other events.
+	</div>
+
+	<div class = "thirteen wide stackable column" id = "about2">Although her novelty celebration cakes are what she is known for, Stephanie also offers a range of products and services such as small sweet treats (cupcakes, cake pops, rocky road squares…), homemade loaves of bread, and hot food for catering home events. All products are 100% homemade and freshly baked by Stephanie herself. Stephanie is based in Waterford and, as of yet, only offers delivery service on select occasions.
+	</div>
+
+	<div class = "three wide stackable column">
+	<img src = "images/stephanie.jpg" alt = "Stephanie" class = "ui small fluid circular image" id = "steph">
+	</div>
+
+	<h3 class = "ui dividing header">Customer Reviews <i class="angle down icon"></i></h3>
+
+	<div id = "content-placeholder"></div>
+
+	<button class="ui button" id="btncall">Add Your Own Review</button>
+	<div class = "ui modal reviewModal">
+	<div class="header">
+	<h1>Add Your Own Review</h1>
+	</div>
+
+<form name = 'newreviewform' id = "newreviewform" class = "ui form" >
+<div class="inline field">
+<label for = "name" class="four wide field">Name (First name only)</label>
+<input type = "text" name="name" id="name" class="ten wide field">
+</div>
+<div class = "inline field">
+<label for = "reviewtext" class = "four wide field">Review</label>
+  		<textarea id = "reviewtext" name = "reviewtext" class = "ten wide field"></textarea>
+</div>
+
+<input type="submit" id="thesubmit" class="ui button" value="Add Review">
+
+</form>
+</div>
+<br>
+
+</main>
+</div>
+<div class = "ui footer"> </div>
+
+<script id="reviews" type="text/x-handlebars-template" >
+<div class = "sixteen wide column ui responsive comments">
+	{{#each this}}
+	<div class = "comment">
+		<a class = "avatar">
+			<img src = "{{image}}" alt = "icon">
+		</a>
+		<div class = "content">
+			<div class = "author">
+				{{{author}}} <span class = "date">&nbsp●&nbsp {{{formatDate date}}}</span>
+			</div>
+			<div class = "text">
+			{{{review}}}
+			</div>
+		</div>
+		<hr>
+	</div>
+	{{/each}}
+</div>
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js'></script>
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script src="js/classie.js"></script>
+<script src ="js/slideandpushmenus.js"></script>
+<script src ="js/javascript.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+		const reviews =
+		[ {
+			'author': 'Rebecca',
+			'image': 'images/rebecca.jpg',
+			'review': 'Amazing Cake for my daughters 1st Birthday. Everyone was blown away by it. Delicious cake and cupcakes! Will definitely recommend and I’ll be back again!',
+			'date': 'March 8 2020',
+		},	{
+			'author': 'Lauren',
+			'image': 'images/lauren.jpg',
+			'review': 'Steph made my daughters first birthday cake and it was just beautiful, everyone loved it and the cupcakes were just superb. 10/10 will order again',
+			'date': 'January 9 2020',
+		},	{
+			'author': 'Ger',
+			'image': 'images/ger.jpg',
+			'review': 'The cake I got off Steph for my sons 18th was Amazing.There wasn’t one crumb left.It was vanilla sponge top Tier and chocolate biscuit bottom tier.Highly recommend her.',
+			'date': 'October 12 2019',
+		},	{
+			'author': 'Susan',
+			'image': 'images/susan.jpg',
+			'review': 'Definitely will recommend to friends the christening cake (chocolate biscuit)was so good and the decoration was brilliant.',
+			'date': 'July 16 2019',
+		},	{
+			'author': 'Amanda',
+			'image': 'images/amanda.jpg',
+			'review': 'Amazing cakes & cup cakes!! Steph is a perfectionist you will not be dissappointed!! Madalyns cake was so pretty nearly too pretty to cut! It was delicious',
+			'date': 'July 2 2019',
+		},	{
+			'author': 'Dani',
+			'image': 'images/dani.jpg',
+			'review': 'Had a cake made for an engagement party and I couldn’t have been happier! Almost didn’t want to cut the cake because it was so beautiful. Really recommend',
+			'date': 'May 24 2019',
+		},	{
+			'author': 'Grace',
+			'image': 'images/grace.jpg',
+			'review': 'Absolutely delighted to get a delivery to the salon today with white and blue cupcakes for the Waterford and Galway all Ireland final. Thank you so much Stephanie so creative and DELICIOUS!!! from the girls at Boudoir House of beauty xx',
+			'date': '2 April 2019',
+		},	{
+			'author': 'Emily-Jane',
+			'image': 'images/emilyjane.jpg',
+			'review': 'Steph is an incredible baker and cake decorator and she goes above and beyond when making her creations. She is supremely talented and a pleasure to deal with. Nothing is too much trouble. You can’t go wrong!!',
+			'date': '27 February 2019',
+		},	{
+			'author': 'Nerie',
+			'image': 'images/nerie.jpg',
+			'review': 'Well.... Amazingly beautiful and tasty... Thanks a million for the lovely cake...',
+			'date': '3 December 2018',
+		},	{
+			'author': 'Sarah',
+			'image': 'images/sarah.jpg',
+			'review': 'such a talented girl the cake was just amazing the detail in it was out of the world it looked to good to cut and the filling inside the cake i was so impressed will def be back to order more xxx',
+			'date': '18 September 2018',
+		},	{
+			'author': 'Rebecca',
+			'image': 'images/rebecca2.jpg',
+			'review': 'Beautifully decorated, lush taste and great service!',
+			'date': '11 July 2018',
+		},	{
+			'author': 'Stephanie',
+			'image': 'images/stephanie2.jpg',
+			'review': 'amazing cakes - highly recommend',
+			'date': '10 July 2018',
+		}]
+
+		Handlebars.registerHelper('formatDate', function(reviewdate) {
+  		let d = new Date(reviewdate);
+  		let daynum = d.getDate();
+  		let month = d.getMonth();
+  		let thisYear = d.getFullYear();
+
+  		let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+ 		let monthname=months[month];
+
+ 		return  monthname + " " + daynum + ", " + thisYear;
+		});
+
+		let template = Handlebars.compile($('#reviews').html());
+
+		let output = template(reviews);
+
+		$("#content-placeholder").html(output);
+
+	$('#newreviewform').submit(function(evt) {
+   		 evt.preventDefault();
+
+  		newreview= {
+   		  author:$('#name').val(),
+   		  review:$('#reviewtext').val(),
+  		  image: 'images/avatar.png',
+  		  date: (new Date()),
+  		}
+  		reviews.unshift(newreview);
+  		let output = template(reviews);
+  		$("#content-placeholder").html(output);
+  		$('.reviewModal').modal('hide');
+  		$('input[type="text"]').each(function() {
+        $(this).val("");
+  		});
+  		$('input[type="textarea"]').each(function() {
+        $(this).val("");
+  		});
+	});
+
+$("#btncall").on('click', function(){
+     $(".reviewModal").modal('show');
+});
+
+		$(".ui.responsive.comments").hide();
+		$("#btncall").hide();
+
+		alert('IMPORTANT NOTICE: Due to Covid-19, the Bite Size Bakery is closed until further notice. Apologies for any inconvenience caused.');			
+	});
+		$("i").on("click", function(){
+			if ($('i').hasClass('angle down icon')) {
+    			$(".ui.responsive.comments").show(1000);
+    			$("#btncall").show(1000);
+    			$("i").attr('class', 'angle up icon');
+    		}
+    		else {
+    			$(".ui.responsive.comments").hide(1000);
+    			$("#btncall").hide(1000);
+    			$("i").attr('class', 'angle down icon');
+    		}
+   		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+	background-image:url(../images/background.jpg);
+	background-color:grey;
+}
+
+.ui.container {
+	background-color:#ffe6ff;
+	margin:0.5% 15%;
+}
+
+.item {
+	border: 0.5px double #e6e6e6;
+}
+
+#intro {
+	color:#666666;
+	padding:0.5% 3%;
+	font-family:Verdana, sans-serif;
+	background-color:#e6e6e6;
+	text-align:justify;
+}
+
+h2 {
+	text-decoration:underline;
+}
+
+#about1 {
+	text-align:justify;
+	line-height:1.5em;
+	margin-top:.5%;
+}
+
+#about2 {
+	text-align:justify;
+	margin-top:.5%;
+}
+
+#steph {
+	margin-left:5%;
+}
+
+#cupcakesimg {
+	float:left;
+}
+
+.ui.dividing.header {
+	width:100%;
+	background-color: #ffffff;
+	padding:2%;
+}
+
+.ui.responsive.comments {
+	background-color:#ffffff;
+	max-width:100%;
+	border: solid 10px #ffffff;
+}
+
+i {
+	cursor:pointer;
+}
+
+.date {
+	color: #b3b3b3;
+	font-size:0.9em;
+	font-weight: normal;
+}
+
+#btncall {
+	margin: 2%;
+}
+
+.ui.footer {
+	text-align:right;
+	margin-right:8%;
+	font-weight:bold;
+	color:#999999;
+	font-size:1.15em;
+}
+
+#customorders{
+	margin-left:2%;
+	font-style:italic;
+}
+
+.ui.celled.structured.table{
+	margin-left:5%;
+	padding:2%;
+	border-collapse:collapse;
+	font-family:Arial, sans-serif;
+	margin-top:3%;
+}
+
+.ui.celled.structured.table td{
+	border:1px solid #ffffff;
+	padding:0.75em;
+	vertical-align: top;
+}
+
+.ui.celled.structured.table tbody tr td:nth-of-type(2n-1){
+	text-align:left;
+	width:12.5%;
+}
+
+.ui.celled.structured.table tbody tr td:nth-of-type(2n){
+	text-align:center;
+	width:37.5%;
+}
+
+.ui.celled.structured.table tr:nth-of-type(even){
+	background-color:#dab3ff;
+}
+
+.ui.celled.structured.table tr:nth-of-type(odd){
+	background-color:#e6ccff;
+}
+
+.ui.celled.structured.table thead:hover{
+	background-color:#d580ff;
+	color:#ffffff;
+}
+
+.ui.celled.structured.table tbody tr:hover{
+	background-color:#dd99ff;
+}
+
+table#celebration tbody tr:nth-of-type(odd){
+	text-align:center;
+	font-weight:bold;
+}
+
+table#celebration tbody tr:nth-of-type(even) td{
+	width:25%;
+}
+
+table#flavours tbody td{
+	width:33%;
+	text-align:center;
+}
+
+.ui.celled.structured.table thead td{
+	font-family:Verdana,serif;
+	font-weight:bold;
+	font-size:1.3em;
+	font-style:italic;
+	text-align:left;
+}
+
+#cupcakes, #deserts, #sweets{
+	width:40%;
+	float:left;
+}
+
+#celebration, #bread, #flavours{
+	width:40%;
+	float:right;
+}
+
+#comment {
+	margin-left:2%;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	font-size:0.75em;
+}
+
+hr {
+	border: 0.5px solid #cccccc;
+}
+
+#celebrationgif, #cupcakesgif, #browniesgif, #breadgif, #cookiegif, #icinggif{
+	float:right;
+	width:30px;
+	height:30px;
+}
+
+.ui.table {
+	margin:0.5% 3%;
+	font-size:0.9em;
+}
+
+a {
+	color:#cccccc;
+}
+
+a:hover {
+	color:#000000;
+}
+
+#contact, #order, #contact2 {
+	font-size:1.1em;
+}
+
+#contact, #contact2 {
+	margin:0 2%;
+}
+
+#order, #ordernote {
+	text-align:center;
+	font-style:italic;
+}
+
+#order {
+	margin-top:2%;
+}
+
+#ordernote {
+	font-size:0.85em;
+}
+
+.ui.form {
+	padding:2%;
+	background-color:#e6e6e6;
+	width:100%;
+}
+
+.ui.form input[type="text"]:focus
+ {
+  background: #fff6ff;
+  -webkit-box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+  box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+}
+
+.ui.button {
+	background-color:#ffffff;
+}
+
+#process {
+	text-align:center;
+}
+
+.validationError {
+	background-color: #ffccff !important;
+}
+
+.ui-state-error {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#process>a {
+	background-color:#ffffff;
+	padding:1%;
+	color:#000000;
+}
+
+#process>a:hover {
+	color:#cccccc;
+}
+
+
+main>div>button {
+	border: none;
+	background: #e6e6e6;
+	color: #000000;
+	padding: 1.5em;
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	font-size: 0.8em;
+}
+
+main>div>button:hover {
+	background: #ffffff;
+}
+
+main>div>button:active {
+	background: #cccccc;
+}
+
+main>div>button:disabled {
+	pointer-events: none;
+}

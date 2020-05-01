@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>The Bite Size Bakery</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/component2.css" rel="stylesheet">
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="plugindemo.html">About my Plugin</a>
+			<a href="menu.html">Our Products</a>
+			<a href="gallery.html">Gallery</a>			
+			<a href="contact.html">Contact Us</a>
+		</nav>
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<h3>Menu</h3>
+			<a href="#">Option 1</a>
+			<a href="#">Option 2</a>
+			<a href="#">Option 3</a>
+		</nav>
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+			<h3>Menu</h3>
+			<a href="#">Option 1</a>
+			<a href="#">Option 2</a>
+			<a href="#">Option 3</a>
+		</nav>
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+			<h3>Menu</h3>
+			<a href="#">Option 1</a>
+			<a href="#">Option 2</a>
+			<a href="#">Option 3</a>
+		</nav>
+
+<div class = "ui container">
+
+<header class = "ui segment">
+	<img src = "images/logo.jpg" alt="The Bite Size Bakery" class="ui middle aligned fluid image">
+</header>
+
+<main class = "ui padded stackable grid">
+
+<nav class = "ui two item stackable menu">
+	<a class = "item" href = "index.html">Home</a>
+	<button class = "item" id="showLeftPush">Menu</button>
+</nav>
+
+<div class = "sixteen wide column">
+	<hr>
+	<h2>About my JQuery Plugin</h2>
+</div>
+
+<div class = "sixteen wide column">
+	I chose to incorporate <strong>slide and push menus</strong> into my website. I chose this plugin because I thought it looked visually appealing and could make for an interesting feature.
+	<br><br>
+	<em>Slide menus</em> are a set of fixed menus that will slide out from any of the edges of the page when prompted.
+	<br>
+	<em>Push menus</em> are slide menus that simultaneously push the body of the page to the left or right, as if the menu is pushing the page.
+	<br><br>
+	Below are some examples:
+	<hr>
+
+</div>
+
+
+	<div class = "ten wide centered column">
+		<h3>Slide Menus</h3>
+			<!-- Class "cbp-spmenu-open" gets applied to menu -->
+			<button id="showLeft">Show/Hide Left Slide Menu</button>
+			<button id="showRight">Show/Hide Right Slide Menu</button>
+			<button id="showTop">Show/Hide Top Slide Menu</button>
+			<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+	</div>
+	<div class = "ten wide centered column">
+		<h3>Push Menus</h3>
+			<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+			<button id="showRightPush">Show/Hide Right Push Menu</button>
+	</div>
+
+	<div class = "sixteen wide column">
+		<hr>
+		<h3>How I used it</h3>
+	<div class = "sixteen wide column">		
+		I used the Left Push menu as the main navigation menu for my website. I also used the Bottom Slide menu to display links to social media accounts in the 'contact us' page.
+		<br><br>
+		<hr>
+	</div>
+</main>
+</div>
+
+<div class = "ui footer"> </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src ="js/slideandpushmenus3.js"></script>
+	<script src ="js/javascript.js"></script>
+</body>
+</html>

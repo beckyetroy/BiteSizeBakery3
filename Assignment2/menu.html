@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>The Bite Size Bakery</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/component.css" rel="stylesheet">
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="plugindemo.html">About my Plugin</a>
+			<a href="menu.html">Our Products</a>
+			<a href="gallery.html">Gallery</a>			
+			<a href="contact.html">Contact Us</a>
+		</nav>
+
+
+<div class = "ui container">
+
+<header class = "ui segment">
+	<img src = "images/logo.jpg" alt="The Bite Size Bakery" class="ui middle aligned fluid image">
+</header>
+
+<main class = "ui padded stackable grid">
+
+<nav class = "ui two item stackable menu">
+	<a class = "item" href = "index.html">Home</a>
+	<button class = "item" id="showLeftPush">Menu</button>
+</nav>
+
+<h2>Menu & Pricing</h2>
+
+<div class = "fifteen wide column" id = "customorders">
+	Please contact us directly for a quote on custom orders and novelty cakes.
+	<br>
+	As a general guide, <strong>single tier novelty cakes start at €55 and two tier cakes at €75.</strong>
+</div>
+
+	<table class = "ui celled structured table" id ="cupcakes">
+	<thead>
+		<tr>
+			<td colspan = "2">Cupcakes <img src = "images/cupcakes.png" alt="Cupcakes" class="ui fluid image" id="cupcakesgif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Standard Cupcakes</td>
+			<td>Box of 6 for €15<br>Box of 12 for €25</td>
+		</tr>
+		<tr>
+			<td>Filled Cupcakes</td>
+			<td>Box of 6 for €20<br>Box of 12 for €30</td>
+		</tr>
+		<tr>
+			<td>Themed Cupcakes</td>
+			<td>Box of 12 for €35 (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Picture* Cupcakes</td>
+			<td>Box of 12 for €30 (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Mini Cupcakes</td>
+			<td>Box of 12 for €15Box of 24 for €25</td>
+		</tr>
+		<tr>
+			<td>Tasting box (4 flavours)</td>
+			<td>Box of 24 mini cupcakes for €30</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<table class = "ui celled structured table" id = "celebration">
+	<thead>
+		<tr>
+			<td colspan = "4">Celebration Cakes<img src = "images/celebration.png" alt="Celebration" class="ui fluid image" id="celebrationgif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan = "4">Spongecake with Buttercream filling and decoration</td>
+		</tr>
+		<tr>
+			<td>6 inches for €20</td>
+			<td>8 inches for €25</td>
+			<td>10 inches for €35</td>
+			<td>12 inches for €45</td>
+		</tr>
+		<tr>
+			<td colspan = "4">Chocolate Drip Cakes</td>
+		</tr>
+		<tr>
+			<td>6 inches for €25</td>
+			<td>8 inches for €30</td>
+			<td>10 inches for €40</td>
+			<td>12 inches for €50</td>
+		</tr>
+		<tr>
+			<td colspan = "4">White/Milk/Dark Chocolate Biscuit Cake with Ganache </td>
+		</tr>
+		<tr>
+			<td>6 inches for €30</td>
+			<td>8 inches for €35</td>
+			<td>10 inches for €45</td>
+			<td>12 inches for €55</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<div class = "ui fifteen wide column" id = "comment">*Can use any photo / image logo of choice</div>
+
+	<table class = "ui celled structured table" id = "deserts">
+	<thead>
+		<tr>
+			<td colspan = "2">Tray Bakes and Deserts<img src = "images/brownies.png" alt="Brownies" class="ui fluid image" id="browniesgif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Brownies / Blondies</td>
+			<td>€20 (16 squares)</td>
+		</tr>
+		<tr>
+			<td>Rocky Road / Mars Bars Squares</td>
+			<td>€20(16 squares)</td>
+		</tr>
+		<tr>
+			<td>Iced Carrot Cake Squares</td>
+			<td>€25 (16 squares)</td>
+		</tr>
+		<tr>
+			<td>Fresh Fruit Pavlova</td>
+			<td>€15 (6-8 servings)</td>
+		</tr>
+		<tr>
+			<td>Mini Pavlovas</td>
+			<td>€15 for 4 (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Lemon Meringue Tart</td>
+			<td>€15 (8-10 servings)</td>
+		</tr>
+		<tr>
+			<td>Standard 10 inch Cheesecake</td>
+			<td>€20 (8 servings)</td>
+		</tr>
+		<tr>
+			<td>Premium 10 inch Cheesecake</td>
+			<td>€25 (8 servings)</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<table class = "ui celled structured table" id = "bread">
+	<thead>
+		<tr>
+			<td colspan = "2">Breads and Loaves <img src = "images/bread.png" alt="Bread" class="ui fluid image" id="breadgif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Multi-seed Guinness Bread</td>
+			<td>1lb Loaf €3 / 2lb Loaf €5</td>
+		</tr>
+		<tr>
+			<td>Banana & Walnut Bread</td>
+			<td>1lb Loaf €3.50 / 2lb Loaf €6</td>
+		</tr>
+		<tr>
+			<td>Chocolate / Vanilla Marble Cake</td>
+			<td>1lb Loaf €5 / 2lb Loaf €7.50</td>
+		</tr>
+		<tr>
+			<td>Chocolate / Orange Marble Cake</td>
+			<td>1lb Loaf €5 / 2lb Loaf €7.50</td>
+		</tr>
+		<tr>
+			<td>Lemon Drizzle Cake</td>
+			<td>1lb Loaf €6 / 2lb Loaf €10</td>
+		</tr>
+		<tr>
+			<td>Iced Coffee & Walnut Cake</td>
+			<td>1lb Loaf €6 / 2lb Loaf €10</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<table class = "ui celled structured table" id = "sweets">
+	<thead>
+		<tr>
+			<td colspan = "2">Sweets & Treats <img src = "images/cookie.png" alt="Cookie" class="ui fluid image" id="cookiegif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>American Style Cookies</td>
+			<td>€10 per dozen (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Muffins</td>
+			<td>€20 per dozen (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Mini Muffins</td>
+			<td>€25 per 24 (minimum order)</td>
+		</tr>
+		<tr>
+			<td>Meringue Pops</td>
+			<td>€1.50 each (minimum order:12)</td>
+		</tr>
+		<tr>
+			<td>Cake Pops</td>
+			<td>€2.50 each</td>
+		</tr>
+		<tr>
+			<td>Novelty Cake Pops</td>
+			<td>Price on Request</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<table class = "ui celled structured table" id = "flavours">
+	<thead>
+		<tr>
+			<td colspan = "3">Available Cake / Icing Flavours & Fillings <img src = "images/icing.png" alt="Icing" class="ui fluid image" id="icinggif"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Vanilla</td>
+			<td>Chocolate</td>
+			<td>Coffee/Mocha</td>
+		</tr>
+		<tr>
+			<td>Baileys</td>
+			<td>Mixed Spice</td>
+			<td>Salted Caramel</td>
+		</tr>
+		<tr>
+			<td>Toffee</td>
+			<td>Red Velvet</td>
+			<td>Lemon</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>Raspberry</td>
+			<td>Strawberry</td>
+		</tr>
+		<tr>
+			<td>Champagne / Rosé</td>
+			<td>Dark / Milk / White Chocolate Ganache</td>
+			<td>Raspberry / Strawberry Jam</td>
+		</tr>
+	</tbody>
+	</table>
+
+</main>
+</div>
+<div class = "ui footer"> </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src ="js/slideandpushmenus.js"></script>
+	<script src ="js/javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+  <title>The Bite Size Bakery</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/component.css" rel="stylesheet">
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body class="cbp-spmenu-push">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+      <h3>Menu</h3>
+      <a href="plugindemo.html">About my Plugin</a>
+      <a href="menu.html">Our Products</a>
+      <a href="gallery.html">Gallery</a>      
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+      <h3>Social Media</h3>
+      <a href = "https://www.facebook.com/StephAtTheBiteSizeBakery/" target = "blank"> Facebook</a>
+      <a href = "https://www.instagram.com/stephatthebitesizebakery/" target = "blank"> Instagram</a>
+    </nav>
+
+<div class = "ui container">
+
+<header class = "ui segment">
+  <img src = "images/logo.jpg" alt="The Bite Size Bakery" class="ui middle aligned fluid image">
+</header>
+
+<main class = "ui padded stackable grid">
+
+<nav class = "ui two item stackable menu">
+  <a class = "item" href = "index.html">Home</a>
+  <button class = "item" id="showLeftPush">Menu</button>
+</nav>
+
+	<div class = "sixteen wide column">
+	<h2>Contact</h2>
+	</div>
+
+	<div class = "sixteen wide column" id = "contact">
+	To place an order or querie please contact Stephanie at one of the addresses below:
+	</div>
+
+	<table class = "ui celled collapsing table">
+		<tbody>
+			<tr>
+				<td>Email:</td>
+				<td><a href = "mailto:StephAtTheBiteSizeBakery@gmail.com" target = "blank">StephAtTheBiteSizeBakery@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td>Phone no:</td>
+				<td>085 743 5670</td>
+			</tr>
+		</tbody>
+	</table>
+
+  <div class = "sixteen wide column" id = "contact2">
+  <span id = "showBottom">Click here to access our Social Media</span>
+  </div>
+
+	<div class = "sixteen wide column" id = "order">
+	Alternatively, fill in your details below to place an order instantly!
+	<br>
+	<span id = "ordernote">	(This form is only for simple, standard orders. To order a custom celebration cake, please contact Stephanie directly.)</span>
+	</div>
+
+<form action="process.html" method = "get" name="placeorder" id="placeorder" class="ui form">
+	<h3 class = "ui dividing header">Place an Order</h3>
+
+  <div class = "three fields">
+  	<div class = "field">
+    <label for="contactname">Contact Name</label>
+    <input type="text" name="contactname" id="contactname" data-h5-errorid="invalid-name" pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" required title = "Please enter a name (Surname optional) with first letter capitalised">
+    <div id="invalid-name" class="ui-state-error"></div>
+  	</div>
+
+  	<div class = "field">
+    <label for="phoneno">Telephone Number</label>
+    <input type="text" name="phoneno" id="phoneno" data-h5-errorid="invalid-number" pattern = "^(\(\d{3}\)|\d{3})-?\d{6,9}$" required title = "Please enter a valid telephone number between 9 - 12 digits">
+    <div id="invalid-number" class="ui-state-error"></div>
+  	</div>
+
+  	<div class = "field">
+    <label for="email">Email Address</label>
+    <input type="text" name="email" id="email" data-h5-errorid="invalid-email" pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required title = "Please enter a valid email address including @ and .">
+    <div id="invalid-email" class="ui-state-error"></div>
+  	</div>
+  </div>
+
+  	<div class = "three fields">
+
+  		<div class = "field">
+  			<label for = "cupcakes">Please select the product(s) you would like to order</label>
+  			<select name="cupcakes" multiple="" class="ui fluid dropdown">
+  			<i class = "dropdown icon"> </i>
+  				<option value = "15">6 Standard Cupcakes €15</option>
+          <option value = "25">12 Standard Cupcakes €25</option>
+          <option value = "20">6 Filled Cupcakes €20</option>
+          <option value = "30">12 Filled Cupcakes €30</option>
+          <option value = "35">12 Themed Cupcakes €35</option>
+          <option value = "15">12 Mini Cupcakes €15</option>
+          <option value = "25">24 Mini Cupcakes €25</option>
+  			</select>
+  		</div>
+
+  	<div class = "field">
+  			<label for = "desert"><br></label>
+        <select name="desert" multiple="" class="ui fluid dropdown">
+        <i class = "dropdown icon"> </i>
+  				<option value = "20">16 Brownie Squares €20</option>
+  				<option value = "20">16 Blondie Squares €20</option>
+  				<option value = "20">16 Rocky Road Squares €20</option>
+  				<option value = "20">16 Mars Bars Squares €20</option>
+  				<option value = "25">16 Iced Carrot Cake Squares €25</option>
+  				<option value = "15">Fresh Fruit Pavlova €15</option>
+  				<option value = "20">10 inch Cheesecake €20</option>
+  			</select>
+  	</div>
+
+  	  	<div class = "field">
+  			<label for = "loaves"><br></label>
+  			<select name="loaves" multiple="" class="ui fluid dropdown">
+  			<i class = "dropdown icon"> </i>
+  				<option value = "5">2lb Multi-seed Guiness Bread €5</option>
+  				<option value = "6">2lb Banana & Walnut Bread €6</option>
+  				<option value = "7.5">2lb Chocolate / Vanilla Marble Cake €7.50</option>
+  				<option value = "7.5">2lb Chocolate / Orange Marble Cake €7.50</option>
+  				<option value = "10">2lb Lemon Drizzle Cake €10</option>
+  				<option value = "10">2lb Iced Coffee & Walnut Cake €10</option>
+  			</select>
+  	</div>
+  </div>
+
+  	<div class = "three wide field">
+    <label for="date">Date the products are required for</label>
+    <span class="ui calendar" id="date">
+      <span class="ui input left icon">
+      <i class="calendar icon"></i>
+      <input type="text" placeholder="Date/Time" data-h5-errorid="invalid-date" class="three wide field" required title = "Please enter a date.">
+     </span>
+    </span>
+    <div id="invalid-date" class="ui-state-error"></div>
+	</div>
+
+	<div class="field">
+ 		<label for = "additional">Any additional details (filling, flavour, design)</label>
+  		<textarea id = "additional" name = "additional"></textarea>
+	</div>
+
+  <h3 id = "total">Total: €0.00</h3>
+
+	<div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" id = "TandC1" data-h5-errorid="invalid-box1" name ="TandC1" required title = "Please tick this.">
+      <label for = "TandC1">I accept that order availability is not always guaranteed.</label>
+      <div id="invalid-box1" class="ui-state-error"></div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" id = "TandC2" data-h5-errorid="invalid-box2" name ="TandC2" required title = "Please tick this.">
+      <label for = "TandC2">I am available and willing to collect my order in Waterford, Ireland.</label>
+      <div id="invalid-box2" class="ui-state-error"></div>
+    </div>
+  </div>
+ 
+  <button class="ui button" type="submit">Submit</button>
+   <button class="ui button" type="reset">Clear form</button>
+</form>
+</main>
+</div>
+<div class = "ui footer"> </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+  <script src="js/classie.js"></script>
+  <script src ="js/slideandpushmenus2.js"></script>
+  <script src ="js/javascript.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/h5Validate/0.9.0/jquery.h5validate.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('form').h5Validate({errorClass:'validationError'});
+
+  let today = new Date();
+  $("#date").calendar({
+  type: 'date',
+  startMode: 'month',
+  monthFirst: false,
+  minDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 7),
+  maxDate: new Date(today.getFullYear() + 1, today.getMonth(), today.getDate()),
+  formatter: {
+      date: function (date, settings) {
+      if (!date) return '';
+      let day = date.getDate();
+      let month = date.getMonth() + 1;
+      let year = date.getFullYear();
+      return day + '-' + month + '-' + year;
+   }}
+  
+  });
+
+});
+
+let total = 0;
+$('.ui.dropdown').dropdown({
+    onChange: function(value, text, $selectedItem) {
+    price = parseFloat(value);
+    total = total + price;
+
+    $('#total').text('Total: ' + formatCurrency(total));
+    }
+  });
+
+  function formatCurrency(num) {
+   /*Unicode Character 'EURO SIGN' \u20ac*/
+    num = num.toString().replace(/\u20ac|\,/g,'');
+    if(isNaN(num))
+    {num = "0";}
+    sign = (num == (num = Math.abs(num)));
+    num = num.toFixed(2);
+    elements= num.split(".");
+    num = elements[0];
+    cents = elements[1];
+    for (let i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+     {num = num.substring(0,num.length-(4*i+3))+','+
+      num.substring(num.length-(4*0+3));
+     }
+    return (((sign)?'':'-') + '\u20ac' + num + '.' + cents)
+ }
+
+</script>
+</body>
+</html>
